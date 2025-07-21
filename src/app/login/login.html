@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="box">
+        <h2>Login</h2>
+
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" [(ngModel)]="username"
+                required #usernameInput="ngModel" />
+            <div *ngIf="usernameInput.invalid && usernameInput.touched" style="color: red; font-size: 13px;">
+                O campo usuário é obrigatório.
+            </div>
+
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" [(ngModel)]="password"
+                required #passwordInput="ngModel" />
+            <div *ngIf="passwordInput.invalid && passwordInput.touched" style="color: red; font-size: 13px;">
+                O campo senha é obrigatório.
+            </div>
+
+            <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+            <span #spnErro class="mensagem-erro" style="display: none;"></span>
+        </form>
+
+        
+    </div>
+</div>

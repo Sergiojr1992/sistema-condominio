@@ -1,0 +1,15 @@
+<nav>
+  <a routerLink="cadastro-morador" routerLinkActive="active">Cadastro Morador</a>
+  <a routerLink="cadastro-encomenda" routerLinkActive="active">Cadastro Encomenda</a>
+  <a routerLink="listagem-encomendas" routerLinkActive="active">Lista de Encomendas</a>
+</nav>
+
+<div class="container" *ngIf="mostrarMensagem">
+  <div class="box">
+    <h2>Seja bem vindo !</h2>
+
+    <img src="logo.png" alt="Logo ou Encomenda" class="img" />
+  </div>
+</div>
+
+<router-outlet></router-outlet>

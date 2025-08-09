@@ -1,0 +1,6 @@
+@CondParcel_HostAddress = http://localhost:5160
+
+GET {{CondParcel_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

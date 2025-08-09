@@ -2,6 +2,8 @@
   <a routerLink="cadastro-morador" routerLinkActive="active">Cadastro Morador</a>
   <a routerLink="cadastro-encomenda" routerLinkActive="active">Cadastro Encomenda</a>
   <a routerLink="listagem-encomendas" routerLinkActive="active">Lista de Encomendas</a>
+  <a class="fechar" (click)="sairSistema()" style="cursor:pointer;">Sair do Sistema</a>
+
 </nav>
 
 <div class="container" *ngIf="mostrarMensagem">
@@ -12,4 +14,6 @@
   </div>
 </div>
 
+
+ 
 <router-outlet></router-outlet>

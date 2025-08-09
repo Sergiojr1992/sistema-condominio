@@ -23,4 +23,11 @@ export class HomeComponent {
         this.mostrarMensagem = !rotaFilha?.snapshot.url.length;
       });
   }
+
+   sairSistema() {
+    // Aqui você pode limpar tokens, localStorage, etc.
+    localStorage.removeItem('token'); // exemplo de limpeza de token
+    // Redireciona para a página de login
+    this.router.navigate(['/login']);
+  }
 }

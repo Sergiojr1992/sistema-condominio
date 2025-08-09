@@ -27,6 +27,8 @@ export class EncomendaService {
     encomenda.dataCadastro = new Date().toISOString();
     this.encomendas.push(encomenda);
     console.log('Encomenda cadastrada:', encomenda); 
+
+    return of(true);
   }
 
   listarEncomendas() {

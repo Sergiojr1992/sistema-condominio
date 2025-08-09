@@ -66,3 +66,19 @@ nav a:hover {
 .box img {
   margin-top: 30px;
 }
+
+  nav a.fechar {
+  color: rgb(247, 244, 244);
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #e91111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+ 
+}
+
+nav a.fechar:hover {
+  background-color: #b11616;
+}

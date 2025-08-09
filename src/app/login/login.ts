@@ -6,7 +6,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, NgIf],
+  imports: [FormsModule],
   templateUrl: './login.html',
   styleUrls: ['./login.css']
 })
@@ -15,13 +15,34 @@ export class LoginComponent {
 
   username = '';
   password = '';
+  carregando = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
+
+  login() {
+    if (!this.username || !this.password) {
+      this.exibirErro('Preencha todos os campos.', 'erro');
+      return;
+    }
+
+    this.carregando = true;
+
+    setTimeout(() => {
+      if (this.username === 'admin' && this.password === '1234') {
+        this.exibirErro('Login efetuado com sucesso!', 'success');
+        setTimeout(() => this.router.navigate(['/home']), 1500);
+      } else {
+        this.exibirErro('Usuário ou senha inválidos', 'erro');
+      }
+
+      this.carregando = false;
+    }, 800);
+  }
 
   exibirErro(mensagem: string, tipo: 'erro' | 'success' = 'erro'): void {
     const spn = this.spnErro.nativeElement;
     spn.innerText = mensagem;
-    spn.style.display = 'block';
+    spn.style.display = 'inline-block';
     spn.classList.remove('erro', 'sucesso');
 
     if (tipo === 'success') {
@@ -30,20 +51,6 @@ export class LoginComponent {
     } else {
       spn.classList.add('erro');
       setTimeout(() => (spn.style.display = 'none'), 4000);
-    }
-  }
-
-  login(): void {
-    if (!this.username || !this.password) {
-      this.exibirErro('Preencha todos os campos.', 'erro');
-      return;
-    }
-
-    if (this.username === 'admin' && this.password === '1234') {
-      this.exibirErro('Login efetuado com sucesso!', 'success');
-      setTimeout(() => this.router.navigate(['/home/cadastro-encomenda']), 1500);
-    } else {
-      this.exibirErro('Usuário ou senha inválidos', 'erro');
     }
   }
 }

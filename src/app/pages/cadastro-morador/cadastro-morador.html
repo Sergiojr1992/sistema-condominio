@@ -2,15 +2,14 @@
   <div class="box">
     <h2>Cadastro de Morador</h2>
     <form (ngSubmit)="salvarMorador()">
- <input type="text" [(ngModel)]="morador.morador" name="nome" placeholder="Nome morador" required />
+
+      <input type="text" [(ngModel)]="morador.nome" name="nome" placeholder="Nome do morador" required />
 
       <input type="text" [(ngModel)]="morador.bloco" name="bloco" placeholder="Digite o bloco" required />
 
-      <input type="number" [(ngModel)]="morador.apartamento" name="apartamento" placeholder="Digite o apartamento"
-        required />
+      <input type="text" [(ngModel)]="morador.apartamento" name="apartamento" placeholder="Digite o apartamento" required />
 
-      <input type="number" [(ngModel)]="morador.whatsapp" name="whatsapp" placeholder="Digite o número do WhatsApp"
-        required />
+      <input type="text" [(ngModel)]="morador.whatsapp" name="whatsapp" placeholder="Digite o número do WhatsApp" required />
 
       <button type="submit">Salvar</button>
 

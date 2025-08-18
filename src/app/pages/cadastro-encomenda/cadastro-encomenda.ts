@@ -39,7 +39,7 @@ cadastrarEncomenda() {
 
   this.service.cadastrarEncomenda(this.dados).subscribe({
     next: (res: any) => {
-      if (res.sucesso) {
+      if (res === true || res.sucesso) {
         this.exibirErro('Encomenda cadastrada com sucesso!', 'success');
         this.dados = { bloco: '', apartamento: '', descricao: '', whatsapp: '' };
       } else {

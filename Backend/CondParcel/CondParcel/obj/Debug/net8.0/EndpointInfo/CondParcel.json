@@ -112,11 +112,21 @@
             "nullable": true,
             "readOnly": true
           },
-          "descricao": {
+          "descricao1": {
             "nullable": true,
             "readOnly": true
           },
           "whatsapp": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "bloco1": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "apartamento1": {
             "type": "string",
             "nullable": true,
             "readOnly": true

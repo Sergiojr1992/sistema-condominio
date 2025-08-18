@@ -15,7 +15,7 @@ export class CadastroMoradorComponent {
   @ViewChild('spnErro') spnErro!: ElementRef;
 
   morador = {
-    morador: '',
+    nome: '',
     bloco: '',
     apartamento: '',
     whatsapp: ''
@@ -24,15 +24,25 @@ export class CadastroMoradorComponent {
   constructor(private service: EncomendaService) {}
 
   salvarMorador() {
-    if (!this.morador.morador || !this.morador.bloco || !this.morador.apartamento || !this.morador.whatsapp) {
+    if (!this.morador.nome || !this.morador.bloco || !this.morador.apartamento || !this.morador.whatsapp) {
       this.exibirMensagem('Preencha todos os campos antes de salvar.', 'erro');
+      return;
+    }
+
+    // Verificar duplicado
+    const existente = this.service['moradores'].find(
+      (m: any) => m.bloco === this.morador.bloco && m.apartamento === this.morador.apartamento
+    );
+
+    if (existente) {
+      this.exibirMensagem('Já existe um morador cadastrado nesse bloco e apartamento.', 'erro');
       return;
     }
 
     try {
       this.service.salvarMorador(this.morador);
       this.exibirMensagem('Morador cadastrado com sucesso!', 'success');
-      this.morador = { morador: '', bloco: '', apartamento: '', whatsapp: '' };
+      this.morador = { nome: '', bloco: '', apartamento: '', whatsapp: '' };
     } catch (error) {
       console.error('Erro ao salvar morador:', error);
       this.exibirMensagem('Erro ao cadastrar morador. Tente novamente!', 'erro');

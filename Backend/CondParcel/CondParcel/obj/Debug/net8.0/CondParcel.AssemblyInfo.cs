@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CondParcel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95b06be3ddc81e4661df4185f9a9a111ed3933c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee29974e5238f4260d471f168f0e1089239ec00e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CondParcel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CondParcel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

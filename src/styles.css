@@ -6,6 +6,14 @@
     scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f4f8; /* cinza claro */
+  color: #111827;            /* texto em cinza escuro */
+}
+
+
 :root {
     font-size: 1255;
     font-family: 'Dm sans', sans-serif;
@@ -26,26 +34,39 @@
 }
 
 .erro, .sucesso {
-  display: block;                
-  margin: 10px auto;    
-  padding: 10px;                
-  border-radius: 15px;          
-  font-weight: 600;             
-  width: 100vw;         
-  max-width: 600px;      
-  text-align: center;    
-  box-sizing: border-box; 
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;       
+  gap: 8px;                      
+  margin: 15px auto;
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
   left: 0;
   right: 0;
-  position: relative;    
-  color: #f5f0f0;       
-  background-color: #d44848; 
-  border: 1px solid #ebccd1;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  animation: fadeIn 0.4s ease-in-out;      
 }
 
+.erro {
+  background-color: #dc2626; 
+  border: 1px solid #ef4444;
+}
 
 .sucesso {
-  color: #3c763d;                
-  background-color: #7fdd59;     
-  border: 1px solid #d6e9c6; 
+  background-color: #16a34a; 
+  border: 1px solid #22c55e;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }

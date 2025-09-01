@@ -26,6 +26,21 @@
   text-align: center;
 }
 
+/* Container de Pesquisa */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 180px;
+}
+
 /* Tabela */
 table {
   width: 100%;
@@ -67,4 +82,41 @@ button {
 
 button:hover {
   background: #219150;
+}
+
+/* Estilos para o status da encomenda */
+.status-pendente {
+  color: #ff8c00; /* Laranja */
+  font-weight: bold;
+}
+
+.status-retirado {
+  color: #27ae60; /* Verde */
+  font-weight: bold;
+}
+
+/* Estilos para o span de mensagens */
+span {
+  display: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.erro {
+  background-color: #dc2626; 
+  border: 1px solid #ef4444;
+}
+
+.sucesso {
+  background-color: #16a34a; 
+  border: 1px solid #22c55e;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }

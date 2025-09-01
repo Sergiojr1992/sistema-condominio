@@ -1,6 +1,13 @@
 <div class="container">
   <div class="box">
     <h2>Encomendas</h2>
+    
+    <div class="search-container">
+      <input type="text" [(ngModel)]="blocoPesquisa" placeholder="Buscar por Bloco" />
+      <input type="text" [(ngModel)]="apartamentoPesquisa" placeholder="Buscar por Apartamento" />
+      <button (click)="buscarEncomendas()">Pesquisar</button>
+    </div>
+
     <table>
       <thead>
         <tr>
@@ -8,6 +15,7 @@
           <th>Descrição</th>
           <th>WhatsApp</th>
           <th>Status</th>
+          <th>Data de Retirada</th>
           <th>Ação</th>
         </tr>
       </thead>
@@ -16,16 +24,19 @@
           <td>{{ e.bloco }}/{{ e.apartamento }}</td>
           <td>{{ e.descricao }}</td>
           <td>{{ e.whatsapp }}</td>
-          <td>{{ e.status }}</td>
+          <td [ngClass]="{'status-pendente': e.status === 'Pendente', 'status-retirado': e.status === 'Retirado'}">
+            {{ e.status }}
+          </td>
+          <td>{{ e.dataRetirada | date:'short' }}</td>
           <td>
             <button *ngIf="e.status === 'Pendente'" (click)="retirar(e)">
               Marcar como Retirado
             </button>
+            <span *ngIf="e.status === 'Retirado'">-</span>
           </td>
         </tr>
       </tbody>
     </table>
-     <span #spnErro class="mensagem-erro" style="display:none;"></span>
+    <span #spnErro></span>
   </div>
 </div>
-

@@ -1,42 +1,49 @@
 <div class="container">
   <div class="box">
     <h2>Encomendas</h2>
-    
+
     <div class="search-container">
-      <input type="text" [(ngModel)]="blocoPesquisa" placeholder="Buscar por Bloco" />
-      <input type="text" [(ngModel)]="apartamentoPesquisa" placeholder="Buscar por Apartamento" />
+      <input type="text" [(ngModel)]="blocoPesquisa" placeholder="Bloco" />
+      <input type="text" [(ngModel)]="apartamentoPesquisa" placeholder="Apartamento" />
       <button (click)="buscarEncomendas()">Pesquisar</button>
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Bloco/Apt</th>
-          <th>Descrição</th>
-          <th>WhatsApp</th>
-          <th>Status</th>
-          <th>Data de Retirada</th>
-          <th>Ação</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let e of encomendas">
-          <td>{{ e.bloco }}/{{ e.apartamento }}</td>
-          <td>{{ e.descricao }}</td>
-          <td>{{ e.whatsapp }}</td>
-          <td [ngClass]="{'status-pendente': e.status === 'Pendente', 'status-retirado': e.status === 'Retirado'}">
-            {{ e.status }}
-          </td>
-          <td>{{ e.dataRetirada | date:'short' }}</td>
-          <td>
-            <button *ngIf="e.status === 'Pendente'" (click)="retirar(e)">
-              Marcar como Retirado
-            </button>
-            <span *ngIf="e.status === 'Retirado'">-</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Bloco/Apt</th>
+            <th>Descrição</th>
+            <th>WhatsApp</th>
+            <th>Status</th>
+            <th>Data de Cadastro</th>
+            <th>Data de Retirada</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of encomendas">
+            <td>{{ e.bloco }}/{{ e.apartamento }}</td>
+            <td>{{ e.descricao }}</td>
+            <td>{{ e.whatsapp }}</td>
+            <td [ngClass]="{'status-pendente': e.status === 'Pendente', 'status-retirado': e.status === 'Retirado'}">
+              {{ e.status }}
+            </td>
+            <!-- Data de cadastro -->
+            <td>{{ e.dataCadastro | date:'short' }}</td>
+            <!-- Data de retirada -->
+            <td>{{ e.dataRetirada | date:'short' }}</td>
+            <td>
+              <button *ngIf="e.status === 'Pendente'" (click)="retirar(e)">
+                Marcar como Retirado
+              </button>
+              <span *ngIf="e.status === 'Retirado'">-</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <span #spnErro></span>
   </div>
 </div>

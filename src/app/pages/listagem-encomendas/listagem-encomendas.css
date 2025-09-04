@@ -15,7 +15,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* Título */
@@ -119,4 +119,51 @@ span {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box {
+    padding: 15px;
+    width: 100%;
+  }
+
+  /* Inputs de pesquisa em coluna no mobile */
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  /* Tabela rolável no mobile */
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    font-size: 14px;
+    min-width: 700px; /* evita quebrar as colunas */
+  }
+
+  thead th, tbody td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box h2 {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 600px;
+  }
 }

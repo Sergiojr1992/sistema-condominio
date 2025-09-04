@@ -69,11 +69,11 @@ img{
 }
 
 .mensagem-erro.erro {
-  color: #ebccd1;
-  background-color: #d44848;
+  background-color: #dc2626; 
+  border: 1px solid #ef4444;
 }
 
 .mensagem-erro.sucesso {
-  color: #3c763d; 
-  background-color: #7fdd59;
+background-color: #16a34a; 
+  border: 1px solid #22c55e;
 }

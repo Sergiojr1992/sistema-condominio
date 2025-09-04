@@ -15,5 +15,9 @@ namespace CondParcel.Models
 
     [Required(ErrorMessage = "O campo Whatsapp é obrigatório.")]
     public string Whatsapp { get; set; }
+    public string Id { get; internal set; }
+    public string Status { get; internal set; }
+    public DateTime DataCadastro { get; internal set; }
+    public DateTime DataRetirada { get; internal set; }
   }
 }

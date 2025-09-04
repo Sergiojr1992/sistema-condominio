@@ -18,7 +18,6 @@ C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\CondParcel.
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\CondParcel.csproj.CoreCompileInputs.cache
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\CondParcel.MvcApplicationPartsAssemblyInfo.cs
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\CondParcel.MvcApplicationPartsAssemblyInfo.cache
-C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\CondParcel.sourcelink.json
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\sistema-condominio\Backend\CondParcel\CondParcel\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

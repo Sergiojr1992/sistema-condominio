@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|solutionrelative:condparcel\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|c:\\sistema-condominio\\backend\\condparcel\\condparcel\\models\\encomendarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|solutionrelative:condparcel\\models\\encomendarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|c:\\sistema-condominio\\backend\\condparcel\\condparcel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|solutionrelative:condparcel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|c:\\sistema-condominio\\backend\\condparcel\\condparcel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{34C7D39A-9508-4043-AF3E-EB2D1736AB28}|CondParcel\\CondParcel.csproj|solutionrelative:condparcel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EncomendaRequest.cs",
+              "DocumentMoniker": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\Models\\EncomendaRequest.cs",
+              "RelativeDocumentMoniker": "CondParcel\\Models\\EncomendaRequest.cs",
+              "ToolTip": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\Models\\EncomendaRequest.cs",
+              "RelativeToolTip": "CondParcel\\Models\\EncomendaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:26:56.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\Program.cs",
+              "RelativeDocumentMoniker": "CondParcel\\Program.cs",
+              "ToolTip": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\Program.cs",
+              "RelativeToolTip": "CondParcel\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:18:38.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\appsettings.json",
               "RelativeDocumentMoniker": "CondParcel\\appsettings.json",
@@ -34,7 +68,8 @@
               "RelativeToolTip": "CondParcel\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T10:23:16.444Z"
+              "WhenOpened": "2025-08-14T10:23:16.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +79,7 @@
               "RelativeDocumentMoniker": "CondParcel\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\sistema-condominio\\Backend\\CondParcel\\CondParcel\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "CondParcel\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAA4wJEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:36:05.239Z",
               "EditorCaption": ""

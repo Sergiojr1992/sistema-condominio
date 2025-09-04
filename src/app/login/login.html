@@ -5,10 +5,10 @@
         <img src="logo.png" alt="Logo ou Encomenda" class="img" />
 
         <form (ngSubmit)="login()">
-            <input type="text" id="username" name="username" placeholder="Digite seu usuário" [(ngModel)]="username"
+            <input type="text" id="username" name="username" placeholder="Usuário" [(ngModel)]="username"
                 required />
 
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" [(ngModel)]="password"
+            <input type="password" id="password" name="password" placeholder="Senha" [(ngModel)]="password"
                 required />
 
             <button type="submit" [disabled]="carregando">
